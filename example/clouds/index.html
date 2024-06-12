@@ -25,7 +25,7 @@
 
       // Auto-rotate
       globe.controls().autoRotate = true;
-      globe.controls().autoRotateSpeed = 0.35;
+      globe.controls().autoRotateSpeed = 0.2;
 
       // Add clouds sphere
       const CLOUDS_IMG_URL = './clouds.png'; // from https://github.com/turban/webgl-earth
@@ -49,6 +49,10 @@
     return <Globe
       ref={globeEl}
       animateIn={false}
+      waitForGlobeReady={true}
+      showAtmosphere={true}
+      atmosphereAltitude={"0.2"}
+      backgroundColor={"#000"}
       globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
       bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
     />;
