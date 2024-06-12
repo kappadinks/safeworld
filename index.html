@@ -1,21 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Globe</title>
   <style> body { margin: 0; } </style>
 
-  <script src="//unpkg.com/react/umd/react.production.min.js"></script>
-  <script src="//unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
-  <script src="//unpkg.com/@babel/standalone"></script>
-
-  <script src="//unpkg.com/react-globe.gl"></script>
-  <!--<script src="../../dist/react-globe.gl.js"></script>-->
+  <script src="https://unpkg.com/react/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone"></script>
+  <script src="https://unpkg.com/react-globe.gl"></script>
 </head>
 
 <body>
 <div id="globeViz"></div>
 
-<script type="text/jsx" data-type="module">
-  import * as THREE from '//unpkg.com/three/build/three.module.js';
-
+<script type="text/babel">
   const { useEffect, useRef } = React;
+  const { Globe } = window['react-globe.gl'];
 
   const World = () => {
     const globeEl = useRef();
@@ -28,7 +30,7 @@
       globe.controls().autoRotateSpeed = 0.35;
 
       // Add clouds sphere
-      const CLOUDS_IMG_URL = './clouds.png'; // from https://github.com/turban/webgl-earth
+      const CLOUDS_IMG_URL = './clouds.png'; // Make sure this file is in your repository
       const CLOUDS_ALT = 0.004;
       const CLOUDS_ROTATION_SPEED = -0.006; // deg/frame
 
@@ -49,8 +51,8 @@
     return <Globe
       ref={globeEl}
       animateIn={false}
-      globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
-      bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+      globeImageUrl="https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
+      bumpImageUrl="https://unpkg.com/three-globe/example/img/earth-topology.png"
     />;
   };
 
@@ -60,3 +62,4 @@
   );
 </script>
 </body>
+</html>
