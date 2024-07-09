@@ -159,7 +159,7 @@
                     if (artist.__typename === "Artist") {
                         imgUrl = artist.visuals.avatarImage.sources[0].url;
                         artistName = artist.profile.name;
-                        artistLink = `https://open.spotify.com/artist/${artist.id}`;
+                        artistLink = `https://open.spotify.com/artist/${artist.uri.split("spotify:artist:")[1]}`;
                         tags = 'Hörbücher Spotify';
                     } else if (artist.__typename === "Website") {
                         imgUrl = artist.visuals.avatarImage.sources[0].url;
