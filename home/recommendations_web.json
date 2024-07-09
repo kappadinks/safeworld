@@ -43,6 +43,72 @@
                     }
                 }
             }
+        },
+        {
+            "data": {
+                "__typename": "Website",
+                "id": "1",
+                "profile": {
+                    "name": "Kikaninchen",
+                    "verified": true
+                },
+                "uri": "https://www.kikaninchen.de/",
+                "visuals": {
+                    "avatarImage": {
+                        "sources": [
+                            {
+                                "height": 128,
+                                "url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.kikaninchen.de/",
+                                "width": 128
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "__typename": "Website",
+                "id": "1",
+                "profile": {
+                    "name": "Die Seite mit dem Elefanten",
+                    "verified": true
+                },
+                "uri": "https://www.wdrmaus.de/elefantenseite/",
+                "visuals": {
+                    "avatarImage": {
+                        "sources": [
+                            {
+                                "height": 128,
+                                "url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.wdrmaus.de/elefantenseite/",
+                                "width": 128
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "__typename": "Website",
+                "id": "1",
+                "profile": {
+                    "name": "Sportschau",
+                    "verified": true
+                },
+                "uri": "https://www.sportschau.de",
+                "visuals": {
+                    "avatarImage": {
+                        "sources": [
+                            {
+                                "height": 128,
+                                "url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.sportschau.de",
+                                "width": 128
+                            }
+                        ]
+                    }
+                }
+            }
         }
     ],
     "totalCount": 2
