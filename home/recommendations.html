@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Spots Empfehlungen</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            padding: 20px;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .filter-bar .filter-icon {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+        }
+        .grid-item {
+            text-align: center;
+        }
+        .grid-item img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Safe Spots Empfehlungen</h1>
+        <div class="search-bar">
+            <input type="text" id="searchInput" onkeyup="filterItems()" placeholder="Search for items...">
+        </div>
+        <div class="filter-bar">
+            <span class="material-icons filter-icon" onclick="filterByTag('Hörbücher')">headset</span>
+            <span class="material-icons filter-icon" onclick="filterByTag('Musik')">music_note</span>
+            <span class="material-icons filter-icon" onclick="filterByTag('Webseite')">language</span>
+            <span class="filter-icon" onclick="filterByTag('Spotify')">Spotify</span>
+            <span class="filter-icon" onclick="filterByTag('Apple Music')">Apple Music</span>
+        </div>
+        <div class="grid" id="iconGrid">
+            <div class="grid-item" data-tags="Webseite">
+                <a href="https://www.kika.de" target="_blank">
+                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://www.kika.de" alt="kika">
+                    <p>Kika</p>
+                </a>
+            </div>
+            <div class="grid-item" data-tags="Webseite">
+                <a href="https://www.wdrmaus.de" target="_blank">
+                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://www.wdrmaus.de" alt="WDR Maus">
+                    <p>WDR Maus</p>
+                </a>
+            </div>
+            <div class="grid-item" data-tags="Webseite">
+                <a href="https://www.sportschau.de" target="_blank">
+                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://www.sportschau.de" alt="Sportschau">
+                    <p>Sportschau</p>
+                </a>
+            </div>
+            <div class="grid-item" data-tags="Spotify Musik">
+                <a href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d" target="_blank">
+                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d" alt="Spotify">
+                    <p>Spotify Artist</p>
+                </a>
+            </div>
+            <div class="grid-item" data-tags="Apple Music Musik">
+                <a href="https://music.apple.com/de/artist/tkkg-junior/1400668275" target="_blank">
+                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://music.apple.com" alt="Apple Music">
+                    <p>Apple Music Artist</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterItems() {
+            const searchInput = document.getElementById('searchInput').value.toLowerCase();
+            const gridItems = document.querySelectorAll('.grid-item');
+            gridItems.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                if (text.includes(searchInput)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+
+        function filterByTag(tag) {
+            const gridItems = document.querySelectorAll('.grid-item');
+            gridItems.forEach(item => {
+                const tags = item.getAttribute('data-tags');
+                if (tags.includes(tag)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
