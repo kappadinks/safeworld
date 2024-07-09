@@ -45,7 +45,7 @@
         .filter-bar .filter-icon {
             margin: 0 10px;
             cursor: pointer;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         .filter-bar .filter-icon.active {
@@ -131,13 +131,13 @@
         </div>
         <div class="filter-bar">
             <span class="material-icons filter-icon" onclick="filterByTag('Hörbücher')">headset</span>
-            <span class="material-icons filter-icon" onclick="filterByTag('Musik')">music_note</span>
-            <span class="material-icons filter-icon" onclick="filterByTag('Webseite')">language</span>
+            <!-- <span class="material-icons filter-icon" onclick="filterByTag('Musik')">music_note</span> -->
+            <span class="material-icons filter-icon" onclick="filterByTag('Webseite')">personal_video</span>
         </div>
-        <div class="filter-bar additional-filters" id="additionalFilters">
+        <!-- <div class="filter-bar additional-filters" id="additionalFilters">
             <span class="filter-icon" onclick="filterByTag('Spotify')">Spotify</span>
             <span class="filter-icon" onclick="filterByTag('Apple Music')">Apple Music</span>
-        </div>
+        </div> -->
         <div class="grid" id="iconGrid">
             <!-- Grid items will be dynamically added here -->
         </div>
@@ -198,7 +198,7 @@
         function filterByTag(tag) {
             const gridItems = document.querySelectorAll('.grid-item');
             const filterIcons = document.querySelectorAll('.filter-icon');
-            const additionalFilters = document.getElementById('additionalFilters');
+            // const additionalFilters = document.getElementById('additionalFilters');
 
             filterIcons.forEach(icon => {
                 icon.classList.remove('selected');
@@ -210,11 +210,11 @@
                 }
             });
 
-            if (tag === 'Musik' || tag === 'Hörbücher') {
-                additionalFilters.classList.add('visible');
-            } else {
-                additionalFilters.classList.remove('visible');
-            }
+            // if (tag === 'Musik' || tag === 'Hörbücher') {
+            //     additionalFilters.classList.add('visible');
+            // } else {
+            //     additionalFilters.classList.remove('visible');
+            // }
 
             gridItems.forEach(item => {
                 const tags = item.getAttribute('data-tags');
