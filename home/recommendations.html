@@ -43,14 +43,15 @@
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-            gap: 20px;
+            gap: 5px;
         }
         .grid-item {
             text-align: center;
         }
         .grid-item img {
-            width: 64px;
-            height: 64px;
+            width: 100%;
+            height: auto;
+            max-width: 64px;
             margin-bottom: 10px;
         }
     </style>
@@ -69,40 +70,36 @@
             <span class="filter-icon" onclick="filterByTag('Apple Music')">Apple Music</span>
         </div>
         <div class="grid" id="iconGrid">
-            <div class="grid-item" data-tags="Webseite">
-                <a href="https://www.kika.de" target="_blank">
-                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://www.kika.de" alt="kika">
-                    <p>Kika</p>
-                </a>
-            </div>
-            <div class="grid-item" data-tags="Webseite">
-                <a href="https://www.wdrmaus.de" target="_blank">
-                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://www.wdrmaus.de" alt="WDR Maus">
-                    <p>WDR Maus</p>
-                </a>
-            </div>
-            <div class="grid-item" data-tags="Webseite">
-                <a href="https://www.sportschau.de" target="_blank">
-                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://www.sportschau.de" alt="Sportschau">
-                    <p>Sportschau</p>
-                </a>
-            </div>
-            <div class="grid-item" data-tags="Spotify Musik">
-                <a href="https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d" target="_blank">
-                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://open.spotify.com/artist/1dfeR4HaWDbWqFHLkxsg1d" alt="Spotify">
-                    <p>Spotify Artist</p>
-                </a>
-            </div>
-            <div class="grid-item" data-tags="Apple Music Musik">
-                <a href="https://music.apple.com/de/artist/tkkg-junior/1400668275" target="_blank">
-                    <img src="https://www.google.com/s2/favicons?sz=128&domain_url=https://music.apple.com" alt="Apple Music">
-                    <p>Apple Music Artist</p>
-                </a>
-            </div>
+            <!-- Grid items will be dynamically added here -->
         </div>
     </div>
 
     <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            fetch('recommendations.json')
+                .then(response => response.json())
+                .then(data => {
+                    const iconGrid = document.getElementById('iconGrid');
+                    data.items.forEach(item => {
+                        const artist = item.data;
+                        const imgUrl = artist.visuals.avatarImage.sources[0].url;
+                        const artistName = artist.profile.name;
+                        const artistLink = `https://open.spotify.com/artist/${artist.id}`;
+
+                        const gridItem = document.createElement('div');
+                        gridItem.classList.add('grid-item');
+                        gridItem.setAttribute('data-tags', 'Hörbücher Spotify Musik');
+                        gridItem.innerHTML = `
+                            <a href="${artistLink}" target="_blank">
+                                <img src="${imgUrl}" alt="${artistName}">
+                                <p>${artistName}</p>
+                            </a>
+                        `;
+                        iconGrid.appendChild(gridItem);
+                    });
+                });
+        });
+
         function filterItems() {
             const searchInput = document.getElementById('searchInput').value.toLowerCase();
             const gridItems = document.querySelectorAll('.grid-item');
