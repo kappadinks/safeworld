@@ -7,111 +7,124 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            font-family: system-ui, -apple-system;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.container {
-    padding: 20px;
-}
+        .container {
+            padding: 20px;
+        }
 
-.title {
-    text-align: center;
-    margin-bottom: 20px;
-}
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-.search-bar {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+        .search-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
 
-.search-bar input {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
+        .search-bar input {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-.filter-bar {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
+        .filter-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
 
-.filter-bar .filter-icon {
-    margin: 0 10px;
-    cursor: pointer;
-}
+        .filter-bar .filter-icon {
+            margin: 0 10px;
+            cursor: pointer;
+        }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-    gap: 5px;
-    grid-auto-rows: 1fr;
-}
+        .filter-bar .filter-icon.active {
+            color: blue;
+        }
 
-.grid-item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    height: 100%;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+            gap: 5px;
+            grid-auto-rows: 1fr;
+        }
 
-.grid-item a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-    color: inherit;
-    padding: 16px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    background-color: #fff;
-    flex-grow: 1;
-}
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-align: center;
+            height: 100%;
+        }
 
-.grid-item a img {
-    width: auto;
-    max-height: 300px;
-    margin-bottom: 10px;
-    border-radius: 0.7em;
-    object-fit: cover;
-    aspect-ratio: 2.125/3.375;
-}
+        .grid-item a {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-decoration: none;
+            color: inherit;
+            padding: 16px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            background-color: #fff;
+            flex-grow: 1;
+            padding: 0;
+        }
 
-.grid-item a p {
-    margin: 0;
-    text-align: center;
-    color: #333;
-    font-size: 14px;
-    flex-grow: 1;
-    display: flex;
-    align-items: flex-end;
-}
+        .grid-item a img {
+            width: auto;
+            max-height: 40px;
+            margin: 0px;
+            border-top-left-radius: 0.5em;
+            border-bottom-left-radius: 0.5em;
+            object-fit: cover;
+            /* aspect-ratio: 2.125/3.375; */
+            aspect-ratio: 1/1;
+        }
 
-.grid-item a:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
+        .grid-item a p {
+            margin: 0;
+            margin-left: 10px;
+            text-align: left;
+            color: #333;
+            font-size: 14px;
+            flex-grow: 1;
+            display: flex;
+            align-items: flex-end;
+        }
 
-.grid-item a:active {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
+        .grid-item a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
 
+        .grid-item a:active {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
 
+        .additional-filters {
+            display: none;
+        }
 
+        .additional-filters.visible {
+            display: flex;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1 class="title">Safe Spots Empfehlungen</h1>
+        <h1 class="title">🆂🅰🅵🅴 🆂🅿🅾🆃🆂<br>Empfehlungen</h1>
         <div class="search-bar">
             <input type="text" id="searchInput" onkeyup="filterItems()" placeholder="Search for items...">
         </div>
@@ -119,6 +132,8 @@
             <span class="material-icons filter-icon" onclick="filterByTag('Hörbücher')">headset</span>
             <span class="material-icons filter-icon" onclick="filterByTag('Musik')">music_note</span>
             <span class="material-icons filter-icon" onclick="filterByTag('Webseite')">language</span>
+        </div>
+        <div class="filter-bar additional-filters" id="additionalFilters">
             <span class="filter-icon" onclick="filterByTag('Spotify')">Spotify</span>
             <span class="filter-icon" onclick="filterByTag('Apple Music')">Apple Music</span>
         </div>
@@ -129,28 +144,41 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            fetch('recommendations.json')
-                .then(response => response.json())
-                .then(data => {
-                    const iconGrid = document.getElementById('iconGrid');
-                    data.items.forEach(item => {
-                        const artist = item.data;
-                        const imgUrl = artist.visuals.avatarImage.sources[0].url;
-                        const artistName = artist.profile.name;
-                        const artistLink = `https://open.spotify.com/artist/${artist.id}`;
+            Promise.all([
+                fetch('recommendations_spotify.json').then(response => response.json()),
+                fetch('recommendations_web.json').then(response => response.json())
+            ]).then(([spotifyData, webData]) => {
+                const iconGrid = document.getElementById('iconGrid');
+                const combinedData = [...spotifyData.items, ...webData.items];
+                
+                combinedData.forEach(item => {
+                    const artist = item.data;
+                    let imgUrl, artistName, artistLink, tags;
+                    
+                    if (artist.__typename === "Artist") {
+                        imgUrl = artist.visuals.avatarImage.sources[0].url;
+                        artistName = artist.profile.name;
+                        artistLink = `https://open.spotify.com/artist/${artist.id}`;
+                        tags = 'Hörbücher Spotify';
+                    } else if (artist.__typename === "Website") {
+                        imgUrl = artist.visuals.avatarImage.sources[0].url;
+                        artistName = artist.profile.name;
+                        artistLink = artist.uri;
+                        tags = 'Webseite';
+                    }
 
-                        const gridItem = document.createElement('div');
-                        gridItem.classList.add('grid-item');
-                        gridItem.setAttribute('data-tags', 'Hörbücher Spotify');
-                        gridItem.innerHTML = `
-                            <a href="${artistLink}" target="_blank">
-                                <img src="${imgUrl}" alt="${artistName}">
-                                <p>${artistName}</p>
-                            </a>
-                        `;
-                        iconGrid.appendChild(gridItem);
-                    });
+                    const gridItem = document.createElement('div');
+                    gridItem.classList.add('grid-item');
+                    gridItem.setAttribute('data-tags', tags);
+                    gridItem.innerHTML = `
+                        <a href="${artistLink}" target="_blank">
+                            <img src="${imgUrl}" alt="${artistName}">
+                            <p>${artistName}</p>
+                        </a>
+                    `;
+                    iconGrid.appendChild(gridItem);
                 });
+            });
         });
 
         function filterItems() {
@@ -168,6 +196,25 @@
 
         function filterByTag(tag) {
             const gridItems = document.querySelectorAll('.grid-item');
+            const filterIcons = document.querySelectorAll('.filter-icon');
+            const additionalFilters = document.getElementById('additionalFilters');
+
+            filterIcons.forEach(icon => {
+                icon.classList.remove('selected');
+            });
+
+            document.querySelectorAll(`.filter-icon`).forEach(icon => {
+                if (icon.textContent.trim() === tag || icon.textContent.trim().includes(tag)) {
+                    icon.classList.add('selected');
+                }
+            });
+
+            if (tag === 'Musik' || tag === 'Hörbücher') {
+                additionalFilters.classList.add('visible');
+            } else {
+                additionalFilters.classList.remove('visible');
+            }
+
             gridItems.forEach(item => {
                 const tags = item.getAttribute('data-tags');
                 if (tags.includes(tag)) {

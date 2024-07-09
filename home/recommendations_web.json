@@ -1,0 +1,49 @@
+{
+    "items": [
+        {
+            "data": {
+                "__typename": "Website",
+                "id": "1",
+                "profile": {
+                    "name": "Die Maus",
+                    "verified": true
+                },
+                "uri": "https://www.wdrmaus.de",
+                "visuals": {
+                    "avatarImage": {
+                        "sources": [
+                            {
+                                "height": 128,
+                                "url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.wdrmaus.de",
+                                "width": 128
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "data": {
+                "__typename": "Website",
+                "id": "1",
+                "profile": {
+                    "name": "Kika",
+                    "verified": true
+                },
+                "uri": "https://www.kika.de",
+                "visuals": {
+                    "avatarImage": {
+                        "sources": [
+                            {
+                                "height": 128,
+                                "url": "https://www.google.com/s2/favicons?sz=128&domain_url=https://www.kika.de",
+                                "width": 128
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    ],
+    "totalCount": 2
+}
