@@ -11,6 +11,20 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            
+            font-family: 'DIN Alternate', sans-serif, 'Carter One';
+            overscroll-behavior-x: none;
+            background-color: #234e70;
+            background-image: linear-gradient(
+                            180deg,
+                            hsl(206deg 52% 29%) 0%,
+                            hsl(191deg 58% 44%) 79%,
+                            hsl(191deg 58% 44%) 97%,
+                            hsl(206deg 52% 29%) 100%
+                            );
+            color: #fff;
+            text-align: center;
+            -webkit-font-smoothing: antialiased;
         }
 
         .container {
@@ -84,7 +98,7 @@
 
         .grid-item a img {
             width: auto;
-            max-height: 40px;
+            max-height: 100px;
             margin: 0px;
             border-top-left-radius: 0.5em;
             border-bottom-left-radius: 0.5em;
@@ -96,6 +110,7 @@
         .grid-item a p {
             margin: 0;
             margin-left: 10px;
+            margin-right: 5px;
             text-align: left;
             color: #333;
             font-size: 14px;
@@ -125,15 +140,15 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">🆂🅰🅵🅴 🆂🅿🅾🆃🆂<br>Empfehlungen</h1>
+        <h1 class="title">🅻🅾🆂 🅶🅴🅷🆃🆂<br>Empfehlungen</h1>
         <div class="search-bar">
-            <input type="text" id="searchInput" onkeyup="filterItems()" placeholder="Finde in Empfehlungen...">
+            <input type="text" id="searchInput" onkeyup="filterItems()" placeholder="In Empfehlungen suchen">
         </div>
-        <div class="filter-bar">
+        <!-- <div class="filter-bar">
             <span class="material-icons filter-icon" onclick="filterByTag('Hörbücher')">headset</span>
-            <!-- <span class="material-icons filter-icon" onclick="filterByTag('Musik')">music_note</span> -->
+            <span class="material-icons filter-icon" onclick="filterByTag('Musik')">music_note</span>
             <span class="material-icons filter-icon" onclick="filterByTag('Webseite')">personal_video</span>
-        </div>
+        </div> -->
         <!-- <div class="filter-bar additional-filters" id="additionalFilters">
             <span class="filter-icon" onclick="filterByTag('Spotify')">Spotify</span>
             <span class="filter-icon" onclick="filterByTag('Apple Music')">Apple Music</span>
