@@ -12,15 +12,6 @@
             padding: 0;
             box-sizing: border-box;
             overscroll-behavior-x: none;
-            /* background-color: #234e70;
-            background-image: linear-gradient(
-                            180deg,
-                            hsl(206deg 52% 29%) 0%,
-                            hsl(191deg 58% 44%) 79%,
-                            hsl(191deg 58% 44%) 97%,
-                            hsl(206deg 52% 29%) 100%
-                            );
-            color: #fff; */
             text-align: center;
             -webkit-font-smoothing: antialiased;
         }
@@ -101,7 +92,6 @@
             border-top-left-radius: 0.5em;
             border-bottom-left-radius: 0.5em;
             object-fit: cover;
-            /* aspect-ratio: 2.125/3.375; */
             aspect-ratio: 1/1;
         }
 
@@ -138,23 +128,10 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="title">🅻🅾🆂 🅶🅴🅷🆃🆂<br>Empfehlungen</h1>
+        <h1 class="title">🅻🅾🆂 🅶🅴🅷🆃🆂<br>hiermit</h1>
         <div class="search-bar">
             <input type="text" id="searchInput" onkeyup="filterItems()" placeholder="In Empfehlungen suchen">
         </div>
-        <a href="https://65b4bc8.online-server.cloud/home/">home</a>
-        <a href="https://65b4bc8.online-server.cloud/0/1">1</a>
-        <a href="https://65b4bc8.online-server.cloud/0/2">2</a>
-        <a href="https://65b4bc8.online-server.cloud/0/3">3</a>
-        <!-- <div class="filter-bar">
-            <span class="material-icons filter-icon" onclick="filterByTag('Hörbücher')">headset</span>
-            <span class="material-icons filter-icon" onclick="filterByTag('Musik')">music_note</span>
-            <span class="material-icons filter-icon" onclick="filterByTag('Webseite')">personal_video</span>
-        </div> -->
-        <!-- <div class="filter-bar additional-filters" id="additionalFilters">
-            <span class="filter-icon" onclick="filterByTag('Spotify')">Spotify</span>
-            <span class="filter-icon" onclick="filterByTag('Apple Music')">Apple Music</span>
-        </div> -->
         <div class="grid" id="iconGrid">
             <!-- Grid items will be dynamically added here -->
         </div>
@@ -162,33 +139,28 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            Promise.all([
-                //fetch('https://65b4bc8.online-server.cloud/api/sc/artistList').then(response => response.json())
-                fetch('recommendations_server.json').then(response => response.json())
-            ]).then(serverData => {
-                const iconGrid = document.getElementById('iconGrid');
-                serverData.forEach(artist => {
-                    
-                    let imgUrl, artistName, artistLink, tags;
-                    imgUrl = artist.image[0];
-                    artistName = artist.name;
-                    artistLink = `https://65b4bc8.online-server.cloud/0/${artist._artistId}`;
-                    tags = artist._genre ? artist._genre : "";
+            fetch('recommendations_server.json')
+                .then(response => response.json())
+                .then(serverData => {
+                    const iconGrid = document.getElementById('iconGrid');
+                    serverData.forEach(artist => {
+                        const imgUrl = artist.image ? artist.image[0] : '';
+                        const artistName = artist.name;
+                        const artistLink = `https://65b4bc8.online-server.cloud/0/${artist._artistId}`;
+                        const tags = artist._genre ? artist._genre : "";
 
-                    console.log(artistName);
-
-                    const gridItem = document.createElement('div');
-                    gridItem.classList.add('grid-item');
-                    gridItem.setAttribute('data-tags', tags);
-                    gridItem.innerHTML = `
-                        <a href="${artistLink}" target="_blank">
-                            <img src="${imgUrl}" alt="${artistName}">
-                            <p>${artistName}</p>
-                        </a>
-                    `;
-                    iconGrid.appendChild(gridItem);
+                        const gridItem = document.createElement('div');
+                        gridItem.classList.add('grid-item');
+                        gridItem.setAttribute('data-tags', tags);
+                        gridItem.innerHTML = `
+                            <a href="${artistLink}" target="_blank">
+                                <img src="${imgUrl}" alt="${artistName}">
+                                <p>${artistName}</p>
+                            </a>
+                        `;
+                        iconGrid.appendChild(gridItem);
+                    });
                 });
-            });
         });
 
         function filterItems() {
@@ -197,37 +169,6 @@
             gridItems.forEach(item => {
                 const text = item.textContent.toLowerCase();
                 if (text.includes(searchInput)) {
-                    item.style.display = '';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        }
-
-        function filterByTag(tag) {
-            const gridItems = document.querySelectorAll('.grid-item');
-            const filterIcons = document.querySelectorAll('.filter-icon');
-            // const additionalFilters = document.getElementById('additionalFilters');
-
-            filterIcons.forEach(icon => {
-                icon.classList.remove('selected');
-            });
-
-            document.querySelectorAll(`.filter-icon`).forEach(icon => {
-                if (icon.textContent.trim() === tag || icon.textContent.trim().includes(tag)) {
-                    icon.classList.add('selected');
-                }
-            });
-
-            // if (tag === 'Musik' || tag === 'Hörbücher') {
-            //     additionalFilters.classList.add('visible');
-            // } else {
-            //     additionalFilters.classList.remove('visible');
-            // }
-
-            gridItems.forEach(item => {
-                const tags = item.getAttribute('data-tags');
-                if (tags.includes(tag)) {
                     item.style.display = '';
                 } else {
                     item.style.display = 'none';
