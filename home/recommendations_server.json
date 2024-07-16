@@ -162,6 +162,15 @@
         ]
     },
     {
+        "_artistId": 128,
+        "name": "LEGO Friends",
+        "dspId": "0XYZ6lwrxbtI9Ggh7GePbT",
+        "followers": 76511,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb3916847529f63fee2a43a975"
+        ]
+    },
+    {
         "_artistId": 14,
         "name": "Miguel Migs",
         "dspId": "6sqqGHyJ1Dnt1qKKe9iGAi",
@@ -315,6 +324,15 @@
         ]
     },
     {
+        "_artistId": 113,
+        "name": "Shrek",
+        "dspId": "6tXBGsG3uptJvoMwytNeAc",
+        "followers": 48548,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb782668801d3e07cd69510af1"
+        ]
+    },
+    {
         "_artistId": 52,
         "name": "Pumuckl",
         "dspId": "1lhceMHrxr0jC943AuAhhh",
@@ -432,6 +450,15 @@
         ]
     },
     {
+        "_artistId": 165,
+        "name": "Die Pinguine aus Madagascar",
+        "dspId": "5LxUyP2QqR8Jj1Rj4hmjju",
+        "followers": 34265,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eba1ef0061e79f1646c5fd9cf0"
+        ]
+    },
+    {
         "_artistId": 82,
         "name": "Dan Brown",
         "dspId": "6yGJF6jxyfhp4evcVfN8ub",
@@ -540,12 +567,30 @@
         ]
     },
     {
+        "_artistId": 123,
+        "name": "Madagascar",
+        "dspId": "5AeHyxHY3brfBwt10hNqnt",
+        "followers": 26665,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb57dce21142b09cce4a04bcb2"
+        ]
+    },
+    {
         "_artistId": 86,
         "name": "Otfried Preußler",
         "dspId": "6OHFxwqdZpOuYMKrV0UHQ5",
         "followers": 26664,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5ebfd6553fab5c57121f7996ab9"
+        ]
+    },
+    {
+        "_artistId": 139,
+        "name": "Janosch",
+        "dspId": "2QnEjtjHZPLkj6dYDmSigw",
+        "followers": 26604,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebbc3d158cefbbf86374f2384b"
         ]
     },
     {
@@ -564,6 +609,15 @@
         "followers": 25617,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5eb6eb8b1b7e422e65e9dadd600"
+        ]
+    },
+    {
+        "_artistId": 114,
+        "name": "Spirit",
+        "dspId": "0a7ReNgiORz9sEajzbbmqw",
+        "followers": 25172,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebdb40aba2affea02f60ada612"
         ]
     },
     {
@@ -603,12 +657,48 @@
         ]
     },
     {
+        "_artistId": 121,
+        "name": "Kung Fu Panda",
+        "dspId": "3kEm8MAvD7TnYMrimnl3D7",
+        "followers": 23416,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb3ad3804fd76ae920054fe83b"
+        ]
+    },
+    {
         "_artistId": 45,
         "name": "Wendy",
         "dspId": "7bq6y10LXuxWmZ7Q1E9mwr",
         "followers": 22101,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5eb89fcbca4a7401b40d4cd1458"
+        ]
+    },
+    {
+        "_artistId": 115,
+        "name": "Sternenfohlen",
+        "dspId": "4Cwiot3PlavNCGx2GPgd8R",
+        "followers": 21582,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb8078f7b7071fc09ba83ced15"
+        ]
+    },
+    {
+        "_artistId": 135,
+        "name": "Dragons - Die Reiter von Berk",
+        "dspId": "1zo1vxkpoT8JMJYdHv2zsa",
+        "followers": 21297,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebe5f157afa9a3429919cafe31"
+        ]
+    },
+    {
+        "_artistId": 134,
+        "name": "Sing",
+        "dspId": "1UWFr8QVOHIblbCG2uSpxC",
+        "followers": 20791,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb894e358ca2e75a8849403c99"
         ]
     },
     {
@@ -639,12 +729,30 @@
         ]
     },
     {
+        "_artistId": 136,
+        "name": "Petronella Apfelmus",
+        "dspId": "7x0Gb1gpe2xRXsp6qXL3xC",
+        "followers": 19875,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebe3254c2c621d6b5d9a478612"
+        ]
+    },
+    {
         "_artistId": 77,
         "name": "Andreas Eschbach",
         "dspId": "3wilKAgmToSrOoekIrjLp1",
         "followers": 19738,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5eb8356ed3a183812dc3d5a4d17"
+        ]
+    },
+    {
+        "_artistId": 133,
+        "name": "Willi wills wissen",
+        "dspId": "3euYhX3kx2U3iIKuzbeXv7",
+        "followers": 19461,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb8b490a8d4dd49447212fbc19"
         ]
     },
     {
@@ -663,6 +771,42 @@
         "followers": 18709,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5ebaa2d1ab9204ba21daa7e7fab"
+        ]
+    },
+    {
+        "_artistId": 143,
+        "name": "Lucky Luke",
+        "dspId": "3GhvVhdZylZUmxABM30UeP",
+        "followers": 18311,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb033ef88862c8c06ddae669b2"
+        ]
+    },
+    {
+        "_artistId": 120,
+        "name": "5 Geschwister",
+        "dspId": "6k51vTPqkkOG4SpZwtZS1s",
+        "followers": 17649,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebcfce88c43090ed6a528e0bc4"
+        ]
+    },
+    {
+        "_artistId": 148,
+        "name": "Miss Melody",
+        "dspId": "5XHchrkk32VTO05bnCwPeT",
+        "followers": 17471,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b273de50bc93277fff0554968d5f"
+        ]
+    },
+    {
+        "_artistId": 138,
+        "name": "Boss Baby",
+        "dspId": "7gGr5h1uarWBQGiv2mkTpl",
+        "followers": 17322,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebe43f96c7b51fba9cbec83a99"
         ]
     },
     {
@@ -711,6 +855,15 @@
         ]
     },
     {
+        "_artistId": 130,
+        "name": "Dinotrux",
+        "dspId": "3OCFfIWnLWu3o037DrjSS3",
+        "followers": 16455,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb22281c5fd3c0b5faa36721aa"
+        ]
+    },
+    {
         "_artistId": 64,
         "name": "HUI BUH neue Welt",
         "dspId": "4qobZpBtoZ58xPbLByIWzD",
@@ -720,12 +873,66 @@
         ]
     },
     {
+        "_artistId": 154,
+        "name": "Der Gestiefelte Kater",
+        "dspId": "6QmFglk8pSx5fMg1wS2VQW",
+        "followers": 16103,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb4bebb2e8a5a7ae1b71b5de6d"
+        ]
+    },
+    {
+        "_artistId": 119,
+        "name": "Inspector Lestrade",
+        "dspId": "1zseWMo31zN2BrKepTFkVr",
+        "followers": 15864,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b27373f525e2479fc6a257990d75"
+        ]
+    },
+    {
+        "_artistId": 160,
+        "name": "Nils Holgersson",
+        "dspId": "6vS1r2PgQlby3jeU4KpDds",
+        "followers": 15375,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b273afaa0c815523530d0f5c59da"
+        ]
+    },
+    {
+        "_artistId": 152,
+        "name": "Die Feriendetektive",
+        "dspId": "6tHZTAngDiw6fp501k9V7b",
+        "followers": 15070,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebc6a039985d6b36772d1cf329"
+        ]
+    },
+    {
         "_artistId": 27,
         "name": "Arthur Conan Doyle",
         "dspId": "2AcBhTO6Q3zzUrfPKmskp3",
         "followers": 14298,
         "image": [
             "https://i.scdn.co/image/60567fe24d7047dd3661e987c7150f522a833955"
+        ]
+    },
+    {
+        "_artistId": 142,
+        "name": "Lauras Stern",
+        "dspId": "0xY8w0o3cSH3gzx4G4h8qD",
+        "followers": 14159,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebe4a74bc29245e3491f57aaac"
+        ]
+    },
+    {
+        "_artistId": 140,
+        "name": "Dragons - Die Wächter von Berk",
+        "dspId": "4flLF0QDCVMtQCc7JJ94gt",
+        "followers": 14152,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebb59a51ddc97159d87f8364e9"
         ]
     },
     {
@@ -756,12 +963,30 @@
         ]
     },
     {
+        "_artistId": 166,
+        "name": "Peter Pan",
+        "dspId": "6KtoLRDglLoZUgfbAB1idL",
+        "followers": 12995,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb5793faa4ddba15dd5541266f"
+        ]
+    },
+    {
         "_artistId": 63,
         "name": "Gruselserie",
         "dspId": "4Mc4wF31fxJKUsECZpGKuI",
         "followers": 12855,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5ebac64949acf7722d7193dcbea"
+        ]
+    },
+    {
+        "_artistId": 159,
+        "name": "Angry Birds",
+        "dspId": "41GLF5pTbZGswSqBW2mZX4",
+        "followers": 12486,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb1da5dcc24ad1329d84c9cd2a"
         ]
     },
     {
@@ -819,6 +1044,15 @@
         ]
     },
     {
+        "_artistId": 157,
+        "name": "Polly Pocket",
+        "dspId": "067JFynbVjValoI6RPUi4Y",
+        "followers": 11301,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb46bd180cf16e07c28a5d3bdd"
+        ]
+    },
+    {
         "_artistId": 105,
         "name": "Pirates of the Caribbean",
         "dspId": "0Bf7oehJAoX3SsPLlps2pN",
@@ -846,6 +1080,15 @@
         ]
     },
     {
+        "_artistId": 163,
+        "name": "Hüter des Lichts",
+        "dspId": "3siSeodzQzsSbEnw9C43SJ",
+        "followers": 9837,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2737784ce6ca10d4e1d9a1a119a"
+        ]
+    },
+    {
         "_artistId": 44,
         "name": "David Nathan",
         "dspId": "05lGoXu9JR7S0vzqUhVCsQ",
@@ -855,12 +1098,48 @@
         ]
     },
     {
+        "_artistId": 127,
+        "name": "Die wilden Kerle",
+        "dspId": "7LzUjEdyDaURYTFAljHQbH",
+        "followers": 9006,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb5712e9db90d2e79e69446187"
+        ]
+    },
+    {
         "_artistId": 85,
         "name": "Tanya Stewner",
         "dspId": "4wqQElhXCfCRWxDEVvPCLH",
         "followers": 8705,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5ebcd7487e057528542afd7146b"
+        ]
+    },
+    {
+        "_artistId": 126,
+        "name": "Michel",
+        "dspId": "7oBzmocu7Y6P5A0ljwNl8j",
+        "followers": 8589,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebed79c49feab53407216f727f"
+        ]
+    },
+    {
+        "_artistId": 144,
+        "name": "In einem Land vor unserer Zeit",
+        "dspId": "229yPx5ZNvL8LchbGZizm2",
+        "followers": 8529,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebfdc33f43ed6e3bf79ac5dd6b"
+        ]
+    },
+    {
+        "_artistId": 125,
+        "name": "Dragons - Die jungen Drachenretter",
+        "dspId": "6N8M6C5nd7mfTIaihfVSeu",
+        "followers": 8456,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebde7e465b8a4fe22061063cf2"
         ]
     },
     {
@@ -882,12 +1161,39 @@
         ]
     },
     {
+        "_artistId": 132,
+        "name": "Jurassic World",
+        "dspId": "4CxmOUGmRyfpzE5RrFe5nl",
+        "followers": 8323,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebc97352894d6c979f9d48241a"
+        ]
+    },
+    {
         "_artistId": 110,
         "name": "Karl May",
         "dspId": "3qSztsZOr73ah3ahQ84v9f",
         "followers": 8280,
         "image": [
             "https://i.scdn.co/image/ab6761610000e5eb2eb20ad90852b3d03a9ab4bd"
+        ]
+    },
+    {
+        "_artistId": 141,
+        "name": "Nele Moost",
+        "dspId": "0jPmCsdBgMZEoSylUJVpa7",
+        "followers": 8132,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2732167c5eb9fc6390f5679124e"
+        ]
+    },
+    {
+        "_artistId": 150,
+        "name": "Max",
+        "dspId": "6GAMZ3hkA2y52fMzSXeADA",
+        "followers": 7843,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebdb8175b0ca5f20ec498bb90d"
         ]
     },
     {
@@ -918,12 +1224,93 @@
         ]
     },
     {
+        "_artistId": 145,
+        "name": "Lieselotte Filmhörspiele",
+        "dspId": "0kZFM6sDiKBxladrJ55iaq",
+        "followers": 7516,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb41a18a94656812a9b8625d60"
+        ]
+    },
+    {
+        "_artistId": 117,
+        "name": "Insel-Krimi",
+        "dspId": "62NkwvbdYZpOQChaDAx9GU",
+        "followers": 7434,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b273463b5246b34fbe69d54837f9"
+        ]
+    },
+    {
+        "_artistId": 131,
+        "name": "Der kleine Hui Buh",
+        "dspId": "5uXwgEQqIIIMsyi0LlRZDn",
+        "followers": 6069,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb2ac6259d42689df18e5670a9"
+        ]
+    },
+    {
+        "_artistId": 116,
+        "name": "Paul Maar",
+        "dspId": "4aZl7oqTfm5sNDu2WQtNPh",
+        "followers": 5856,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2738c8e1f268ef3925dabdf2c30"
+        ]
+    },
+    {
+        "_artistId": 149,
+        "name": "Klaus Baumgart",
+        "dspId": "3ShnWP1GlBZNLeoA0rFbTu",
+        "followers": 5134,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b273115cbc339061f4e751650008"
+        ]
+    },
+    {
+        "_artistId": 153,
+        "name": "Trolljäger",
+        "dspId": "6yfyZLHnUqC8JrSix1SHkw",
+        "followers": 5038,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebc9ddd81fecbfddbe4b429d65"
+        ]
+    },
+    {
+        "_artistId": 111,
+        "name": "Oliver Rohrbeck",
+        "dspId": "2HqTRvO1WDx7A4yTxLjYFe",
+        "followers": 4871,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebf77d73a1a353138de8167c37"
+        ]
+    },
+    {
         "_artistId": 97,
         "name": "Sabine Bohlmann",
         "dspId": "5oCyRdPN5mmuvh69MF6Fqb",
         "followers": 4599,
         "image": [
             "https://i.scdn.co/image/ab67616d0000b2738f4febff149cacbce8425491"
+        ]
+    },
+    {
+        "_artistId": 162,
+        "name": "Fünf Freunde - Endlich erwachsen",
+        "dspId": "2UeLzv3eCP7B5cq3NPeykD",
+        "followers": 4432,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebdb5b4b4c5b102e306e223cc0"
+        ]
+    },
+    {
+        "_artistId": 156,
+        "name": "Julia Donaldson",
+        "dspId": "16LvLSIezRcXAEpqcDDl2v",
+        "followers": 4267,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb65f1edcdaf09ffda5a5800d6"
         ]
     },
     {
@@ -945,12 +1332,57 @@
         ]
     },
     {
+        "_artistId": 158,
+        "name": "Ingo Siegner",
+        "dspId": "7wuKnjjgUlPDhrh72u4MI8",
+        "followers": 3732,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2734df232033a2b0aee8c7dfbf1"
+        ]
+    },
+    {
+        "_artistId": 151,
+        "name": "Heiko Wolz",
+        "dspId": "2h4ZQik2Z6AEdPpUByCMUY",
+        "followers": 3446,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b273f43fca685295ffe114ab3386"
+        ]
+    },
+    {
+        "_artistId": 147,
+        "name": "Hedda Hex",
+        "dspId": "2vVBGzMrm9HuNYh9iZ6NV9",
+        "followers": 3391,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5ebfa0a9dabce4b485de38f95ce"
+        ]
+    },
+    {
+        "_artistId": 124,
+        "name": "Jurassic World - Neue Abenteuer",
+        "dspId": "0qVrIOSpmB63CdWG1QBfia",
+        "followers": 3218,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb166ca547bb43e2eea5c510d5"
+        ]
+    },
+    {
         "_artistId": 92,
         "name": "Julian Horeyseck",
         "dspId": "0C6qX6jTeORZSufB4vIWfY",
         "followers": 3206,
         "image": [
             "https://i.scdn.co/image/ab67616d0000b273f43fca685295ffe114ab3386"
+        ]
+    },
+    {
+        "_artistId": 129,
+        "name": "Charly Hübner",
+        "dspId": "3M3NalRSyh9ANiouhJweRt",
+        "followers": 3168,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b27379c8af1ecf3460119b172966"
         ]
     },
     {
@@ -963,12 +1395,66 @@
         ]
     },
     {
+        "_artistId": 164,
+        "name": "Matti Krause",
+        "dspId": "72eqLT5wHoF2qk8YqrSOVH",
+        "followers": 3045,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2733bc8b50612d93d3b9a768224"
+        ]
+    },
+    {
+        "_artistId": 122,
+        "name": "Robert Missler",
+        "dspId": "5OVEENFUbd78VmP5HOJH7r",
+        "followers": 2972,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2739303c2f040cafef74ed229d9"
+        ]
+    },
+    {
+        "_artistId": 161,
+        "name": "Bamberger Kasperl",
+        "dspId": "1e4VA5g1xAAAWo4SP3YBlC",
+        "followers": 2655,
+        "image": [
+            "https://i.scdn.co/image/ab6761610000e5eb4844e70c12083575f74eacc9"
+        ]
+    },
+    {
+        "_artistId": 137,
+        "name": "Stefan Naas",
+        "dspId": "4IsGVSnNoy1EQUfO6O7qAG",
+        "followers": 2401,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2739f168efe2c5a841b04b13a38"
+        ]
+    },
+    {
+        "_artistId": 146,
+        "name": "Kim Possible",
+        "dspId": "4K0ahCZPDrpRDp5U1o42y5",
+        "followers": 2346,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b27306ae2de8757561a9e210bdf1"
+        ]
+    },
+    {
         "_artistId": 104,
         "name": "Martin Baltscheit",
         "dspId": "2p6Kbqt3EiQHl4Hb610v1c",
         "followers": 2181,
         "image": [
             "https://i.scdn.co/image/ab67616d0000b2733ab736c59e169a1b91b02903"
+        ]
+    },
+    {
+        "_artistId": 155,
+        "name": "Martina Sahler",
+        "dspId": "2coZCWXODXU8HMYqenJ3Kd",
+        "followers": 1866,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b273239dfab01baa57f39e2c9d88"
         ]
     },
     {
@@ -981,12 +1467,30 @@
         ]
     },
     {
+        "_artistId": 112,
+        "name": "Florian Lamp",
+        "dspId": "2OUL2T3SNcApUdrOOXjY9g",
+        "followers": 1173,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b2731141068b5c2ffdae32f68a0a"
+        ]
+    },
+    {
         "_artistId": 69,
         "name": "Roger Graf",
         "dspId": "6mPCF9pfRyBHbyHyvgr3kz",
         "followers": 908,
         "image": [
             "https://i.scdn.co/image/ab67616d0000b273f1b57e8b61fcaf28d3f9a630"
+        ]
+    },
+    {
+        "_artistId": 118,
+        "name": "Peter Schneider",
+        "dspId": "1Sk8ldjfORHC0IAM63NusS",
+        "followers": 420,
+        "image": [
+            "https://i.scdn.co/image/ab67616d0000b27391ce1aa8ae4e20da12381659"
         ]
     }
 ]
