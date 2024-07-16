@@ -175,6 +175,8 @@
                     artistLink = `https://65b4bc8.online-server.cloud/0/${artist._artistId}`;
                     tags = artist._genre ? artist._genre : "";
 
+                    console.log(artistName);
+
                     const gridItem = document.createElement('div');
                     gridItem.classList.add('grid-item');
                     gridItem.setAttribute('data-tags', tags);
