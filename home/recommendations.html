@@ -163,7 +163,8 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             Promise.all([
-                fetch('https://65b4bc8.online-server.cloud/api/sc/artistList').then(response => response.json())
+                //fetch('https://65b4bc8.online-server.cloud/api/sc/artistList').then(response => response.json())
+                fetch('recommendations_server.json').then(response => response.json())
             ]).then(serverData => {
                 const iconGrid = document.getElementById('iconGrid');
                 serverData.forEach(artist => {
