@@ -163,27 +163,16 @@
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             Promise.all([
-                fetch('recommendations_spotify.json').then(response => response.json()),
-                fetch('recommendations_web.json').then(response => response.json())
-            ]).then(([spotifyData, webData]) => {
+                fetch('https://65b4bc8.online-server.cloud/api/sc/artistList').then(response => response.json())
+            ]).then(serverData => {
                 const iconGrid = document.getElementById('iconGrid');
-                const combinedData = [...spotifyData.items, ...webData.items];
-                
-                combinedData.forEach(item => {
-                    const artist = item.data;
-                    let imgUrl, artistName, artistLink, tags;
+                serverData.forEach(artist => {
                     
-                    if (artist.__typename === "Artist") {
-                        imgUrl = artist.visuals.avatarImage.sources[0].url;
-                        artistName = artist.profile.name;
-                        artistLink = `https://open.spotify.com/artist/${artist.uri.split("spotify:artist:")[1]}`;
-                        tags = 'Hörbücher Spotify';
-                    } else if (artist.__typename === "Website") {
-                        imgUrl = artist.visuals.avatarImage.sources[0].url;
-                        artistName = artist.profile.name;
-                        artistLink = artist.uri;
-                        tags = 'Webseite';
-                    }
+                    let imgUrl, artistName, artistLink, tags;
+                    imgUrl = artist.image[0];
+                    artistName = artist.name;
+                    artistLink = `https://65b4bc8.online-server.cloud/0/${artist._artistId}`;
+                    tags = artist._genre ? artist._genre : "";
 
                     const gridItem = document.createElement('div');
                     gridItem.classList.add('grid-item');
