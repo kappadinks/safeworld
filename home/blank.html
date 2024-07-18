@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Centered Pre Element</title>
     <style>
-        body { 
+        body, div { 
             margin: 0;
+            padding: 10px;
             color: #fff;
             /* background-color: #06d; */
             background-color: #1d1d1f;
-            display: flex;
+            display: inline-flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
         span {
-            display:block;
-            width: 80%; /* 90% of the viewport width */
+            width: 100%; /* 90% of the viewport width */
             text-align: center;
             font-family: system-ui, -apple-system;
             font-size: 4vw; /* Responsive font size */
